@@ -1,0 +1,104 @@
+#jirengrid {
+    display: grid;
+    grid-template-columns: 20% 1fr 150px; 
+    grid-template-rows: 100px 450px 100px; 
+    grid-template-areas:
+        "nv hd hd"      
+        "sc sc sc"    
+        "ft ft ft";     
+    grid-gap: 20px; 
+}
+
+body{
+    background-color:  #27ae60;
+}
+
+
+header {
+    grid-area: hd;
+    background-color: rgb(24, 108, 13);
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;  
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.5;
+    padding: 0 20px; 
+    padding-left: 20px;
+    
+}
+
+.img2 {
+    width: 80px; 
+    height: 80px;
+    padding-bottom: 15px;
+}
+
+
+.parkinsans {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+nav {
+
+    grid-area: nv;
+    background-color:  rgb(24, 108, 13);
+    color: rgb(255, 255, 255);
+    font-family: "parkinsans";
+    font-size: 12px; 
+    line-height: 0.6; 
+    letter-spacing: 0.6px; 
+    padding-top: 5px; 
+    padding-left: 15px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+section {
+display: flex;
+justify-content: space-between;
+grid-area: sc;
+}
+
+article {
+    background-color:  rgb(24, 108, 13);
+    padding: 10px;
+    max-width: 34%; 
+    font-size: 16px; 
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    line-height: 1.4; 
+    padding-top: 0;
+    padding-left: 20px;
+    
+}
+
+.img1 {
+    width: auto; 
+    height: 450px;  
+    background-color: rgb(24, 108, 13);
+}
+
+footer {
+    grid-area: ft;
+    background-color: rgb(24, 108, 13);
+    color:rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1; 
+    letter-spacing: 0.6px; 
+    padding-top: 5px; 
+    padding-left: 15px;
+    max-width: 60%;
+    font-size: 10px;
+    
+}
