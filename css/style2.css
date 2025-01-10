@@ -1,0 +1,130 @@
+#jirengrid2 {
+    display: grid;
+    grid-template-columns: 20% 1fr 150px;
+    grid-template-rows: 100px auto auto auto;
+    grid-template-areas:
+        "nv hd hd"
+        "sc-sami sc-sami sc-sami"
+        "sc-hannes sc-hannes sc-hannes"
+        "sc-alex sc-alex sc-alex"
+        "ft ft ft";
+    grid-gap: 20px;
+}
+
+body{
+    background-color:  #27ae60;
+}
+
+.img2 {
+    width: 80px; 
+    height: 80px;
+    padding-bottom: 5px;
+}
+
+header {
+    grid-area: hd;
+    background-color: rgb(24, 108, 13);
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;  
+    color: rgb(255, 255, 255);
+    font-family: "parkinsans";
+    font-size: 25px;
+    letter-spacing: 1.5;
+    padding: 0 20px; 
+    padding-left: 20px;
+    border: 5px solid  rgb(15, 95, 4);
+    border-radius: 20px;
+    
+}
+
+.img-alex,
+.img-sami,
+.img-hannes {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(15, 95, 4);
+    border-radius: 15px;
+}
+
+
+
+
+.parkinsans {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+nav {
+
+    grid-area: nv;
+    background-color:  rgb(24, 108, 13);
+    color: rgb(255, 255, 255);
+    font-family: "parkinsans";
+    font-size: 12px; 
+    line-height: 0.6; 
+    letter-spacing: 0.6px;  
+    padding-left: 15px;
+    border: 5px solid  rgb(15, 95, 4);
+    border-radius: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.sami-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(24, 108, 13);
+    color: rgb(255, 255, 255);
+    font-family: "Parkinsans", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.7px;
+    padding: 20px;
+    border: 5px solid rgb(15, 95, 4);
+    border-radius: 20px;
+    grid-area: sc-sami;
+    gap: 20px;
+    max-height: 210px;
+}
+
+
+.hannes-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(24, 108, 13);
+    color: rgb(255, 255, 255);
+    font-family: "Parkinsans", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.7px;
+    padding: 20px;
+    border: 5px solid rgb(15, 95, 4);
+    border-radius: 20px;
+    grid-area: sc-hannes;
+    gap: 20px;
+    max-height: 210px;
+}
+
+.alex-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(24, 108, 13);
+    color: rgb(255, 255, 255);
+    font-family: "Parkinsans", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.7px;
+    padding: 20px;
+    border: 5px solid rgb(15, 95, 4);
+    border-radius: 20px;
+    grid-area: sc-alex;
+    gap: 20px;
+}
